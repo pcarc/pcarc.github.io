@@ -1,0 +1,207 @@
+body{
+	margin:0;
+	padding:0;
+
+/*	background: url(./bg.JPG);
+	background-image: url(./bg.JPG);
+	background-position-x: initial;
+	background-position-y: initial;*/
+	background-image: url(./free-texture_net_tatami01.jpg);
+	background-size: initial;
+	background-repeat: repeat;
+	background-attachment: scroll;
+	background-origin: initial;
+	background-clip: initial;
+	background-color: lightgray;
+}
+#bg{
+	margin:0;
+	z-index:-1;
+	padding:0;
+	position:absolute;
+	width:100%;
+}
+#name{
+	margin: 0 auto;
+	/*margin-bottom:10px !important;*/
+	/*font-size:1em;*/
+	text-align: center;
+	color:white;
+	vertical-align:middle;
+	/*font-size:calc(100%/2) ;	*/
+}
+
+#menu{
+//	position:fixed;
+	top:0;
+	/*border: 1px solid #FF0000;*/
+	margin: 0 auto;
+	padding:0px;
+	/*background:#005500;*/
+	background-image: url(./Tatami_fuchi_my.jpg);
+	background-size: contain;
+	background-repeat: repeat;
+	text-align: center;
+	/*display:table;*/
+	width:100%;
+	/*table-layout:fixed;*/
+	font-size:1.5em;
+}
+#menulst{
+	margin:0;
+/*	display:block;*/
+	display:table;
+	padding:0;
+	table-layout:fixed;
+	width:100%;
+	background:rgba(0,255,0,0);
+	font-family:sans-serif;
+	font-weight:bolder;
+}
+#menu li{
+	/*display: block;*/
+/*	float: left;*/
+	width:16.5%;
+	height:100%;
+	background:rgba(0,255,0,0);
+	vertical-align:middle;
+	text-align:center;
+	display:table-cell;
+
+}
+#cirname{
+	/*	font-size:0.3em;*/
+	/*text-align: center;*/
+	background:rgba(0,100,0,0) !important;
+	padding:0;
+	color:white;
+	padding-bottom:0;
+	padding-top:0;
+}
+.menu_item{
+	display:block;
+	text-decoration: none;
+	color:white;
+	text-align: center;
+/*	padding:1px ;
+	height:100%;
+	width:100%;
+	top:0.5em;*/
+/*display:table-cell;*/
+	/*	border-left: 1px solid #FF0000;
+	border-right: 1px solid #FF0000;*/
+	vertical-align:middle;
+	overflow-x:hidden;
+/*	font-size:calc(100vw/37 );*/	
+	font-size:calc(100vw/37/1.5 );	
+	margin: 0 auto;
+	padding: 0 auto;
+}
+#menulst  li + li {
+	border-left:0.2vw solid #CCC;
+}
+#main_contents{
+	background:rgba(255,255,255,0.5);
+	height:100%;
+	width:70%;
+	margin: 0 auto;
+	margin-top:5em;
+	margin-bottom:5em;
+	padding:1.5em;
+	padding-bottom:1.5em;
+	background-image:url("./img141112003605_m.jpg");
+	background-size: cover;
+	background-repeat: repeat;
+	background-attachment: scroll;
+	
+}
+iframe{
+	width:100%;
+	height:100%;
+}
+#gotop{
+	position:fixed;
+	bottom:0;
+	right:0;
+
+}
+#topbtn{
+	font-size:3em;
+	background:rgba(255,255,255,0.1);
+	opacity:0.3;
+	/*height:1em;*/
+}
+#logomark{
+width:80%;
+display: block;
+ margin-left: auto;
+ margin-right: auto;
+ 
+}
+#bottompad{
+padding-bottom:0px;
+
+}
+#footer{
+position:static;
+background-image: url(./Tatami_fuchi_my.jpg);
+	background-size: contain;
+	background-repeat: repeat;
+	text-align: center;
+	/*display:table;*/
+	width:100%;
+	/*table-layout:fixed;*/
+	font-size:1.5em;
+
+}
+#footer > * {
+opacity:0;
+}
+h2+p{
+padding-left:1em;
+
+}
+h3+p{
+padding-left:1.5em;
+
+}
+@media screen and (max-width: 540px){
+	.menu_item{
+		/*	font-size:0.9em;	*/
+	}
+	#menu ul li{
+		/*		display: block;*/
+		float: left;
+		/*width:32.89vw !important;*/
+		width:24.5vw;
+		height:100%;
+		font-size:calc(100vw/21 ) !important;
+	}
+	#menu ul li a{
+		font-size:calc(100vw/21 ) !important;
+		text-align:center;
+	}
+	#name{
+		font-size:0.5em;
+	}
+	#main_contents{
+		margin-top:2em;
+		padding-top:1em;
+	}
+	#intro{
+	margin-top:0;
+	}
+	#menu{
+		position:static;
+	}
+	#menulst  li + li {
+		border-left:1px solid #CCC;
+		border-bottom:0.3vw solid #CCC;
+	}
+	#menulst :first-child {
+		border-left:0.5vw solid rgba(0,0,0,0);
+	}
+	#menulst li:last-child {
+		border-right:1px solid #CCC;
+	}
+}
